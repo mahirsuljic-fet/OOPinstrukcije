@@ -16,7 +16,7 @@
 - [p15_functions](./p15_functions.cpp)
 - [p16_static](./p16_static.cpp)
 - [p17_multifile](./p17_multifile)
-  - [p17_multifile.cpp)](./p17_multifile/p17_multifile.cpp)
+  - [p17_multifile.cpp](./p17_multifile/p17_multifile.cpp)
   - [mymath.cpp](./p17_multifile/mymath.cpp)
   - [mymath.hpp](./p17_multifile/mymath.hpp)
 - [p18_struct](./p18_struct.cpp)
