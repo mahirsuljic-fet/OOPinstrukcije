@@ -1,7 +1,17 @@
 #include <iostream>
 
+// Pored funkcija i metoda moguće je overloadati i operatore.
+// Operator u c++ je funkcija.
+// Operatore je moguće overloadati na dva načina:
+// - kao metod, podrazumijeva objekat nad kojem se poziva operator kao prvi argument
+// - kao funkciju, zahtijeva eksplicitno navođenje parametara
+
 struct Tacka
 {
+    // Overloadanje operatora + za strukturu Tacka.
+    // Podrazumijeva se da je objekat na kojem se poziva operator + (s lijeva od +) prvi argument.
+    // Dakle, potrebno je samo navesti jedan parametar koji predstavlja objekat koji se nalazi sa desne strane operatora +.
+    // U ovom slučaju operator + uzima objekta tipa Tacka po referenci s lijeve strane, objekat tipa Tacka po const referenci sa desne strane i vraća objekat tipa Tacka.
     Tacka operator+(const Tacka& other)
     {
       Tacka nova_tacka = {
@@ -12,6 +22,7 @@ struct Tacka
       return nova_tacka;
     }
 
+    // Isto kao i za operator +.
     Tacka operator-(const Tacka& other)
     {
       return Tacka {
@@ -20,6 +31,9 @@ struct Tacka
       };
     }
 
+    // Isto kao i za operator +, ali uzima cijeli broj sa desne strane.
+    // Potrebno je napomenuti da samo sa ovom definicijom operatora * nije moguće da se napiše: 5 * t, gdje je t tipa Tacka.
+    // To je zato jer ova definicija zahtijeva da je s lijeve strane operatora * tip Tacka, a sa desne tip int.
     Tacka operator*(int n)
     {
       return {
@@ -39,6 +53,9 @@ struct Tacka
     double x, y;
 };
 
+// Ukoliko operator definišemo izvan strukture potrebno je navesti sve parametre.
+// Prvi parametar predstavlja objekat s lijeve strane operatora *, a drugi sa desne strane.
+// Ova definicija omogućava pisanje npr.: 5 * t, gdje je t tipa Tacka
 Tacka operator*(int n, const Tacka& tacka)
 {
   return {
