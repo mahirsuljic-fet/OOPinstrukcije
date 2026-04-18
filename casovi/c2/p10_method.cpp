@@ -30,6 +30,8 @@ int main()
 {
   Tacka t { 10, 20 };
   t.print(); // poziv metoda print nad objektom t
+  Tacka t1 { 5, 10 };
+  t1.print(); // poziv metoda print nad objektom t
 }
 
 // napraviti metod koji vraca zbir vrijednosti x i y

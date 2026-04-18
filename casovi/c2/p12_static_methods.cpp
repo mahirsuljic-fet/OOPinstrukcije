@@ -1,5 +1,6 @@
 // static methods
 
+#include <cstdlib>
 #include <iostream>
 
 class Tacka
