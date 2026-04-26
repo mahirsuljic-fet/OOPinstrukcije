@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-static std::string prefix;
+std::string prefix;
 
 class Logger
 {

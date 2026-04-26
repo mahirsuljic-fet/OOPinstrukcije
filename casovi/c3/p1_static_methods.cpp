@@ -1,11 +1,9 @@
 // static methods
 
-#include <cstdlib>
 #include <iostream>
 
-class Tacka
+struct Tacka
 {
-  public:
     static void static_pozdrav()
     {
       static unsigned long pozdrav_counter = 1;
@@ -20,7 +18,6 @@ class Tacka
 
     Tacka(double x, double y) : x_(x), y_(y), id_(counter_++) { }
 
-  private:
     // ignorisati ovaj komentar ispod
     // clang-format off
     static unsigned long counter_; // >>v

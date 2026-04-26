@@ -42,6 +42,8 @@ struct Tacka
     // Analogno mogu se kreirati i metodi koji postavljaju vrijednosti članova i nazivaju se setteri (kao set, postavi).
     double get_x() { return x_; }
     double get_y() { return y_; }
+    void set_x(double novi_x) { x_ = novi_x; }
+    void set_y(double novi_y) { y_ = novi_y; }
 
   private: // sve nakon ovoga ima private pristup
     // Često se može vidjeti da private članovi (i metode) imaju sufix ili prefix _, kao članovi x_ i y_ ispod.
@@ -58,4 +60,7 @@ int main()
   std::cout << t.get_x() << std::endl; // ok jer je metod get_x public
 
   // napraviti set metode (settere) za x_ i y_
+  t.set_x(30);
+  t.set_y(30);
+  t.print();
 }

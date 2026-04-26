@@ -45,6 +45,6 @@ struct Tacka
 
 int main()
 {
-  Tacka t = Tacka(10, 20);
+  Tacka t = Tacka(10);
   t.print();
 }
