@@ -1,4 +1,4 @@
-### Primjeri
+### Sadrzaj
 - [p1_primitives](./p1_primitives.cpp)
 - [p2_operators](./p2_operators.cpp)
 - [p3_pointers](./p3_pointers.cpp)
@@ -16,10 +16,12 @@
 - [p15_functions](./p15_functions.cpp)
 - [p16_static](./p16_static.cpp)
 - [p17_multifile](./p17_multifile)
-  - [p17_multifile.cpp](./p17_multifile/p17_multifile.cpp)
   - [mymath.cpp](./p17_multifile/mymath.cpp)
   - [mymath.hpp](./p17_multifile/mymath.hpp)
+  - [p17_multifile.cpp](./p17_multifile/p17_multifile.cpp)
 - [p18_struct](./p18_struct.cpp)
+- [Pitanja](#pitanja)
+- [Zadaci](#zadaci)
 
 ---
 

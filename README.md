@@ -1,5 +1,5 @@
 # Objektno orjentirano programiranje (OOP)
 - [Časovi](./casovi/)
-  - [čas 1](./casovi/c1/)
-  - [čas 2](./casovi/c2/)
-  - [čas 3](./casovi/c3/)
+  - [čas 1](./casovi/c1/README.md)
+  - [čas 2](./casovi/c2/README.md)
+  - [čas 3](./casovi/c3/README.md)
