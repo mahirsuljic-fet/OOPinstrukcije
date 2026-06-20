@@ -65,13 +65,14 @@ int main()
   //////////////////////////////////////////////////////////////////////////////////////
 
   int n = 10;
-  auto print_double_n = [n]() mutable { // pokušati capture po referenci
-    n *= 2;
+  auto print_triple_n = [n]() mutable { // pokušati capture po referenci
+    n *= 3;
     std::cout << n << std::endl;
   };
-  print_double_n();
+
+  print_triple_n();
   n = 20;
-  print_double_n();
+  print_triple_n();
 
   //////////////////////////////////////////////////////////////////////////////////////
 
@@ -84,6 +85,8 @@ int main()
   std::function<int(int)> double_f = [](int x) { return 2 * x; };
   std::function<int(int)> triple_f = [](int x) { return 3 * x; };
   std::function<int(int)> square_f = [](int x) { return x * x; };
+
+  std::function<void(int, int)> add_and_print = [](int a, int b) { std::cout << a + b; };
 
   int apply_func(int, const std::function<int(int)>&);
 

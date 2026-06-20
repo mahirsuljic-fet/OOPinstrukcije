@@ -1,0 +1,12 @@
+Agenda:
+- `std::map` (?)
+- Implicitna konverzija i explicit constructor
+- Copy & move constructor
+- Copy & move operator=
+- Exceptions
+- Generics
+---
+- Inheritance
+- Polymorphism
+- Static & dynamic dispatch
+- Virtual destructor
