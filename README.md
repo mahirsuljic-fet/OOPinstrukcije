@@ -4,3 +4,4 @@
   - [čas 2](./casovi/c2/README.md)
   - [čas 3](./casovi/c3/README.md)
   - [čas 4](./casovi/c4/README.md)
+  - [čas 5](./casovi/c5/README.md)
