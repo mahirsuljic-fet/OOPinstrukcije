@@ -4,8 +4,8 @@ Agenda:
 - Copy & move constructor
 - Copy & move operator=
 - Exceptions
-- Generics
 ---
+- Generics
 - Inheritance
 - Polymorphism
 - Static & dynamic dispatch
