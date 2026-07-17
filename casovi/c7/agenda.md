@@ -1,0 +1,5 @@
+- Generics
+- Inheritance
+- Polymorphism
+- Static & dynamic dispatch
+- Virtual destructor
